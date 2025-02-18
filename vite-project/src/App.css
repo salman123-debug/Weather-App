@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url("./public/back1.jpg.jpg") no-repeat center center/cover;
+  position: relative;
+}
+.weather-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+.textw {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+.input {
+  height: 45px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 4px solid #ff9800;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.textw h2 {
+  font-weight: 900;
+  font-size: 50px;
+}
+
+/* .btn {
+  margin-top: 20px;
+  background: #ff9800;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e68a00;
+} */
+
+.weather-info {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .textw {
+    font-size: 18px;
+    width: 90%;
+    padding: 15px;
+  }
+  .textw h2 {
+    font-size: 36px;
+  }
+  .input {
+    width: 100%;
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+/*
+
+.textw {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.input {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #ff9800;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e68a00;
+}
+
+.weather-info {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .textw {
+    font-size: 14px;
+  }
+}
+ */
