@@ -38,7 +38,7 @@ function App() {
         <div className="overlay"></div>
       </div>
       <div className="textw">
-        <h1>Salman's Weather App</h1>
+        <h1>Adarsh's Weather App</h1>
         <input
           type="text"
           placeholder="Enter City Name"
